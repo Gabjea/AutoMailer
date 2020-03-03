@@ -126,5 +126,8 @@
   <ItemGroup>
     <None Include="Resources\icons8_close_window_21.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="TODOS.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
