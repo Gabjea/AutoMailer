@@ -11,9 +11,9 @@ using EASendMail;
 
 namespace AutoMailer
 {
-    public partial class Form1 : Form
+    public partial class AutoMailer : Form
     {
-        public Form1()
+        public AutoMailer()
         {
             InitializeComponent();
         }
@@ -29,8 +29,9 @@ namespace AutoMailer
             for (int i = 8; i <= 60; i++)
                 comboBox2.Items.Add(i);
 
-            comboBox1.SelectedIndex = 0;
-            comboBox2.SelectedIndex = 0;
+            comboBox1.SelectedIndex =8;
+            comboBox2.SelectedIndex = 6;
+            richTextBox1.SelectionFont = new Font(comboBox1.SelectedItem.ToString(), Int32.Parse(comboBox2.SelectedItem.ToString()));
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -45,7 +46,9 @@ namespace AutoMailer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(textBox1.Text.ToString());
+            if (textBox1.Text.Trim() != "")
+                listBox1.Items.Add(textBox1.Text);
+            else MessageBox.Show("Te rog sa introduci un email!");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -83,18 +86,19 @@ namespace AutoMailer
             {
 
                 SmtpServer oServer = new SmtpServer("mail.wireimpulse.com");
-                // SMTP user authentication
                 oServer.User = "contact@wireimpulse.com";
                 oServer.Password = "Wire2017";
+                oServer.ConnectType = SmtpConnectType.ConnectTryTLS;
                 oServer.Port = 465;
+                oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
                 foreach (String email in listBox1.Items)
                 {
                     SmtpMail oMail = new SmtpMail("TryIt");
                     oMail.From = new MailAddress("contact@wireimpulse.com");
                     oMail.To.Add(new MailAddress(email));
 
-                    oMail.Subject = "test email sent from C#";
-                    oMail.TextBody = "test body";
+                    oMail.Subject = textBox2.Text;
+                    oMail.TextBody = richTextBox1.Text;
 
                     SmtpClient oSmtp = new SmtpClient();
                     oSmtp.SendMail(oServer, oMail);
@@ -105,6 +109,24 @@ namespace AutoMailer
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Config f = new Config();
+            f.Show();
         }
     }
 }
