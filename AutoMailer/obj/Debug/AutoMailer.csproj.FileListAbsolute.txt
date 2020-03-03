@@ -1,0 +1,11 @@
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Debug\AutoMailer.exe.config
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Debug\AutoMailer.exe
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Debug\AutoMailer.pdb
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.csprojAssemblyReference.cache
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.Form1.resources
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.Properties.Resources.resources
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.csproj.GenerateResource.cache
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.exe
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.pdb
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Debug\EASendMail.dll
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.csproj.CopyComplete
