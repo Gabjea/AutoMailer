@@ -68,14 +68,23 @@ namespace AutoMailer
                 listBox1.Items.Add(textBox1.Text);
                 textBox1.Text = "";
             }
-            else MessageBox.Show("Te rog sa introduci un email!");
+            else {
+                Popup f = new Popup("Please write an email!");
+               
+                f.Show();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedIndex != -1)
                 listBox1.Items.RemoveAt(listBox1.SelectedIndex);
-            else MessageBox.Show("Selecteaza un email pe care sa-l stergi din lista");
+            else
+            {
+                Popup f = new Popup("Select an item you want to remove from list!");
+                
+                f.Show();
+            }
         }
 
         private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
@@ -126,9 +135,11 @@ namespace AutoMailer
 
                     SmtpClient oSmtp = new SmtpClient();
                     oSmtp.SendMail(oServer, oMail);
-                    MessageBox.Show("This email has been submitted to server successfully!");
                     textBox2.Text = "";
                     richTextBox1.Text = "";
+                    Popup f = new Popup("Email was sent successfully!");
+                    
+                    f.Show();
                 }
 
             }catch (Exception ex)

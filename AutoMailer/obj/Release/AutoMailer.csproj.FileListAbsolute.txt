@@ -1,0 +1,13 @@
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Release\AutoMailer.exe.config
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Release\AutoMailer.exe
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Release\AutoMailer.pdb
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Release\EASendMail.dll
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Release\AutoMailer.csprojAssemblyReference.cache
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Release\AutoMailer.AutoMailer.resources
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Release\AutoMailer.Config.resources
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Release\AutoMailer.Properties.Resources.resources
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Release\AutoMailer.csproj.GenerateResource.cache
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Release\AutoMailer.csproj.CopyComplete
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Release\AutoMailer.exe
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Release\AutoMailer.pdb
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Release\AutoMailer.Popup.resources

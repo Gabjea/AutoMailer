@@ -2,7 +2,6 @@ C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Debug\AutoMaile
 C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Debug\AutoMailer.exe
 C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\bin\Debug\AutoMailer.pdb
 C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.csprojAssemblyReference.cache
-C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.Form1.resources
 C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.Properties.Resources.resources
 C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.csproj.GenerateResource.cache
 C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.exe
@@ -21,3 +20,6 @@ C:\Users\Ganjuleanu\Desktop\AutoMailer\AutoMailer\obj\Debug\AutoMailer.exe
 C:\Users\Ganjuleanu\Desktop\AutoMailer\AutoMailer\obj\Debug\AutoMailer.pdb
 C:\Users\Ganjuleanu\Desktop\AutoMailer\AutoMailer\obj\Debug\AutoMailer.AutoMailer.resources
 C:\Users\Ganjuleanu\Desktop\AutoMailer\AutoMailer\obj\Debug\AutoMailer.Config.resources
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.AutoMailer.resources
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.Config.resources
+C:\Users\profesor20\Desktop\AutoMailer\AutoMailer\AutoMailer\obj\Debug\AutoMailer.Popup.resources
