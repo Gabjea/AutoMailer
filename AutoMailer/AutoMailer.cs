@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EASendMail;
 using System.Runtime.InteropServices;
-
+using System.Collections;
 
 namespace AutoMailer
 {
@@ -23,7 +23,7 @@ namespace AutoMailer
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            label3.Location = new Point(this.Width / 2 - label3.Size.Width / 2, label3.Location.Y);
             foreach (FontFamily font in System.Drawing.FontFamily.Families)
             {
                 comboBox1.Items.Add(font.Name);
@@ -124,21 +124,54 @@ namespace AutoMailer
                 oServer.ConnectType = SmtpConnectType.ConnectTryTLS;
                 oServer.Port = Int32.Parse(lines[1]);
                 oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
+                if(listBox1.Items.Count == 0)
+                {
+                    Popup f = new Popup("Please write an email!");
+
+                    f.Show();
+                }
+                ArrayList invalides = new ArrayList();
+                
                 foreach (String email in listBox1.Items)
                 {
-                    SmtpMail oMail = new SmtpMail("TryIt");
-                    oMail.From = new MailAddress(lines[2]);
-                    oMail.To.Add(new MailAddress(email));
+                    if (RegexUtilities.IsValidEmail(email))
+                    {
 
-                    oMail.Subject = textBox2.Text;
-                    oMail.TextBody = richTextBox1.Text;
+                        SmtpMail oMail = new SmtpMail("TryIt");
+                        oMail.From = new MailAddress(lines[2]);
 
-                    SmtpClient oSmtp = new SmtpClient();
-                    oSmtp.SendMail(oServer, oMail);
-                    textBox2.Text = "";
-                    richTextBox1.Text = "";
+                        oMail.To.Add(new MailAddress(email));
+
+                        oMail.Subject = textBox2.Text;
+                        oMail.TextBody = richTextBox1.Text;
+
+                        SmtpClient oSmtp = new SmtpClient();
+                        oSmtp.SendMail(oServer, oMail);
+                        textBox2.Text = "";
+                        richTextBox1.Text = "";
+                        
+                    }else
+                    {
+                        invalides.Add(email);
+
+                    }
+                }
+                if (invalides.Count == 0)
+                {
                     Popup f = new Popup("Email was sent successfully!");
-                    
+
+                    f.Show();
+                }
+                else
+                {
+                    string m= "Couldn't send it to: \n";
+                    foreach(string invalid in invalides)
+                    {
+                        m += invalid + "\n";
+                    }
+
+                    Popup f = new Popup(m);
+
                     f.Show();
                 }
 

@@ -1,3 +1,1 @@
-﻿1.clear mail after add to list
-2.clear subject and body after send an email
-3.config
+﻿1.if email list is clear can't send message

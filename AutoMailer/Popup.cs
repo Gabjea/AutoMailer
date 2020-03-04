@@ -20,7 +20,8 @@ namespace AutoMailer
         
             this.Width += 15+Math.Abs(this.Width-label1.Width);
             label1.Location = new Point(this.Width / 2 - label1.Size.Width / 2, 30);
-            button3.Location = new Point(this.Width / 2-button3.Size.Width/2,button3.Location.Y);
+            label1.Margin = new Padding(0,0,0,30);
+            button3.Location = new Point(this.Width / 2-button3.Size.Width/2,this.Size.Height-30);
         }
        
 

@@ -66,5 +66,10 @@ namespace AutoMailer
                 }
             }
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
